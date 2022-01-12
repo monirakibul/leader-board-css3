@@ -125,3 +125,34 @@ hr{
     color: #FF4A60;
     padding: 3px;
 }
+
+@media only screen and (max-width: 767px){
+    .block-container{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course{
+        width: 90%;
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .block-container{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
+    }
+    .course{
+        width: 90%;
+    }
+}
